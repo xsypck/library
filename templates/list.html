@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>list page</title>
+</head>
+<body>
+{% for item in data %}
+<table>
+    <tr>
+        <td>{{ item.valuea }}</td>
+        <td>{{ item.valuea }}</td>
+        <td>{{ item.result }}</td>
+    </tr>
+    {% endfor %}
+</table>
+<form method="POST" action="clean">
+    {% csrf_token %}
+    <input type="submit" value="清空"></input>
+</form>
+</body>
+</html>

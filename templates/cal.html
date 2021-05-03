@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>计算页面</title>
+</head>
+<body>
+<form action="/cal" method="POST">
+    {% csrf_token %}
+    <input type="number" name="value1">
+    <input type="number" name="value2">
+    <input type="submit" value="提交计算">
+</form>
+</body>
+</html>
